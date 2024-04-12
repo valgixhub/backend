@@ -1,0 +1,28 @@
+{
+  "name": "valgix-backend",
+  "version": "1.0.0",
+  "description": "Backend of Valgix",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon -x node --loader ts-node/esm --experimental-specifier-resolution=node src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "@types/node": "^20.12.5",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "crypto-es": "^2.1.0",
+    "mongoose": "^8.3.1",
+    "redis": "^4.6.13",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.43.0"
+  }
+}
